@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    <script>
+        function writeText(){
+        var para = document.createElement("P");
+        para.innerHTML=document.getElementById('textField').value;
+        document.body.appendChild(para);
+        }
+    </script>
+    
+</head>
+
+<body>
+    <input type="text" id="textField">
+    <button onclick="writeText()" >ok</button>
+</body>
+
+</html>
